@@ -13,17 +13,6 @@
     position: relative;
 }
 .box {
-    /* width: min(90% , 420%);
-    margin: 24px auto;
-    padding: 24px 28px; */
-    border: 5px solid red;
-    
-    border-image: linear-gradient(30deg, #0073ff, #ee0979) 1;
-    border-image-slice: 1;
-    border-radius: 30px;
-}
-
-.form-box{
     width: 90%;
     max-width: 450px;
     position: absolute;
@@ -33,6 +22,14 @@
     background:transparent;
     padding: 50px 60px 70px;
     text-align: center;
+    border: 3px solid transparent;
+    border-radius: 15px;
+    background: linear-gradient(#4f4f7e, #4f4f7e)  padding-box,
+        linear-gradient(45deg, #0073ff, #ee0979) border-box;
+}
+
+.form-box{
+    width: 100%;
 }
 .form-box h1{
     font-size: 30px;
@@ -51,7 +48,10 @@
     transform:translateX(-50%);
 }
 .input-field{
-    background: hsla(0, 3%, 65%, 0.523);
+    border: 2px solid transparent;
+    border-radius: 15px;
+    background: linear-gradient(#d9d9de, #d9d9de) padding-box,
+        linear-gradient(45deg, #0073ff, #ee0979) border-box;
     margin: 15px 0;
     /* border-radius: 15px; */
     display: flex;
@@ -65,13 +65,17 @@
     background: transparent;
     border: 0;
     padding: 18px 15px;
-    outline: 0;
+    outline: 0;width: 100%;
+    background: transparent;
+    border: none;
+    padding: 18px 15px;
+    outline: none;
+    font-size: 14px;
+    color: #000000;
+    transition: border-radius 0.5s ease-in-out;
 }
 .input-field :hover{
     background: #eaeaea;
-}
-input:focus {
-  border-bottom: 2px solid #3c00a0;
 }
 
 form p{
